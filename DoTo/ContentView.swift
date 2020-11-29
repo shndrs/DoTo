@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var items = [TodoItem]()
     
     var body: some View {
+        
+        // MARK: - Navigation
 
         NavigationView {
             VStack {
@@ -26,6 +28,7 @@ struct ContentView: View {
                         guard !new.isEmpty else { return }
                         items.append(TodoItem(todo: new))
                         new = ""
+                        save()
                     }, label: {
                         Image(systemName: "plus")
                     }).padding(.leading, 5)
@@ -39,7 +42,21 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Dotoo")
+            .navigationBarTitle("Dotoos")
+        }.onAppear(perform: { loadItems() })
+        
+    }
+    
+    private func save() {
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(items),
+                                  forKey: "todoList")
+    }
+    
+    private func loadItems() {
+        if let dataItems = UserDefaults.standard.value(forKey: "todoList") as? Data {
+            if let list = try? PropertyListDecoder().decode(Array<TodoItem>.self, from: dataItems) {
+                self.items = list
+            }
         }
     }
 }

@@ -14,6 +14,8 @@
 		726F2A99257381AB00849514 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726F2A98257381AB00849514 /* Preview Assets.xcassets */; };
 		726F2A9C257381AC00849514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726F2A9A257381AB00849514 /* LaunchScreen.storyboard */; };
 		726F2AA52573854400849514 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F2AA42573854400849514 /* TodoItem.swift */; };
+		726F2AAA25738D2A00849514 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F2AA925738D2A00849514 /* Database.swift */; };
+		726F2AAE25738D6700849514 /* DBKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F2AAD25738D6700849514 /* DBKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		726F2A9B257381AC00849514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726F2A9D257381AC00849514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		726F2AA42573854400849514 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		726F2AA925738D2A00849514 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		726F2AAD25738D6700849514 /* DBKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		726F2A8E257381A800849514 /* DoTo */ = {
 			isa = PBXGroup;
 			children = (
+				726F2AA825738D1D00849514 /* Utill */,
 				726F2A8F257381A800849514 /* AppDelegate.swift */,
 				726F2A91257381A800849514 /* SceneDelegate.swift */,
 				726F2AA42573854400849514 /* TodoItem.swift */,
@@ -76,6 +81,23 @@
 				726F2A98257381AB00849514 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		726F2AA825738D1D00849514 /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				726F2AB025738D8200849514 /* Storage */,
+			);
+			path = Utill;
+			sourceTree = "<group>";
+		};
+		726F2AB025738D8200849514 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				726F2AA925738D2A00849514 /* Database.swift */,
+				726F2AAD25738D6700849514 /* DBKeys.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +173,8 @@
 				726F2A90257381A800849514 /* AppDelegate.swift in Sources */,
 				726F2A92257381A800849514 /* SceneDelegate.swift in Sources */,
 				726F2AA52573854400849514 /* TodoItem.swift in Sources */,
+				726F2AAE25738D6700849514 /* DBKeys.swift in Sources */,
+				726F2AAA25738D2A00849514 /* Database.swift in Sources */,
 				726F2A94257381A800849514 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
