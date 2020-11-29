@@ -13,6 +13,7 @@
 		726F2A96257381AB00849514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726F2A95257381AB00849514 /* Assets.xcassets */; };
 		726F2A99257381AB00849514 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726F2A98257381AB00849514 /* Preview Assets.xcassets */; };
 		726F2A9C257381AC00849514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726F2A9A257381AB00849514 /* LaunchScreen.storyboard */; };
+		726F2AA52573854400849514 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F2AA42573854400849514 /* TodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		726F2A98257381AB00849514 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		726F2A9B257381AC00849514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726F2A9D257381AC00849514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726F2AA42573854400849514 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				726F2A8F257381A800849514 /* AppDelegate.swift */,
 				726F2A91257381A800849514 /* SceneDelegate.swift */,
+				726F2AA42573854400849514 /* TodoItem.swift */,
 				726F2A93257381A800849514 /* ContentView.swift */,
 				726F2A95257381AB00849514 /* Assets.xcassets */,
 				726F2A9A257381AB00849514 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			files = (
 				726F2A90257381A800849514 /* AppDelegate.swift in Sources */,
 				726F2A92257381A800849514 /* SceneDelegate.swift in Sources */,
+				726F2AA52573854400849514 /* TodoItem.swift in Sources */,
 				726F2A94257381A800849514 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

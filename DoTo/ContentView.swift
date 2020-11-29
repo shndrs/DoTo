@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var new = ""
+    @State private var items = [TodoItem]()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(items) { item in
+                        Text(item.todo)
+                    }
+                }
+            }
+        }
     }
 }
 
