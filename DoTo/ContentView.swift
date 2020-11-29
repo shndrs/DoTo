@@ -16,12 +16,30 @@ struct ContentView: View {
 
         NavigationView {
             VStack {
+                
+                // MARK: - Adding Stack
+                
+                HStack {
+                    TextField("Add a Dotoo...", text: $new)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    Button(action: {
+                        guard !new.isEmpty else { return }
+                        items.append(TodoItem(todo: new))
+                        new = ""
+                    }, label: {
+                        Image(systemName: "plus")
+                    }).padding(.leading, 5)
+                }.padding()
+                
+                // MARK: - TableView
+                
                 List {
                     ForEach(items) { item in
-                        Text(item.todo)
+                        Text(item.todo).bold()
                     }
                 }
             }
+            .navigationBarTitle("Dotoo")
         }
     }
 }
