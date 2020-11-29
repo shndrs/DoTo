@@ -39,12 +39,19 @@ struct ContentView: View {
                 List {
                     ForEach(items) { item in
                         Text(item.todo).bold()
-                    }
+                    }.onDelete(perform: { indexSet in
+                        delete(at: indexSet)
+                    })
                 }
             }
             .navigationBarTitle("Dotoos")
         }.onAppear(perform: { loadItems() })
         
+    }
+    
+    private func delete(at offset: IndexSet) {
+        items.remove(atOffsets: offset)
+        save()
     }
     
     private func save() {
