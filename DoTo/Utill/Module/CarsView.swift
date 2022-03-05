@@ -11,7 +11,7 @@ struct CarsView: View {
     
     var body: some View {
         NavigationView {
-            List(0 ..< 5) { item in
+            List(0 ..< 4) { item in
                 HStack {
                     Image("my location")
                         .resizable()
@@ -20,11 +20,10 @@ struct CarsView: View {
                         Text("Ferrari")
                         Text("FXXK Evo")
                             .foregroundColor(Color.red)
-                            
                     }
                 }
-            }
-        }.navigationTitle(Text("Scuderia Ferrari"))
+            }.navigationBarTitle(Text("Scuderia Ferrari"))
+        }
     }
     
 }
