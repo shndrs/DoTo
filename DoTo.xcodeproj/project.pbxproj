@@ -16,6 +16,7 @@
 		726F2AA52573854400849514 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F2AA42573854400849514 /* TodoItem.swift */; };
 		726F2AAA25738D2A00849514 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F2AA925738D2A00849514 /* Database.swift */; };
 		726F2AAE25738D6700849514 /* DBKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726F2AAD25738D6700849514 /* DBKeys.swift */; };
+		F4E79E9827D3443B0074D80D /* CarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E79E9727D3443B0074D80D /* CarsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		726F2AA42573854400849514 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		726F2AA925738D2A00849514 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		726F2AAD25738D6700849514 /* DBKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBKeys.swift; sourceTree = "<group>"; };
+		F4E79E9727D3443B0074D80D /* CarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		726F2AA825738D1D00849514 /* Utill */ = {
 			isa = PBXGroup;
 			children = (
+				F4E79E9627D3441D0074D80D /* Module */,
 				726F2AB025738D8200849514 /* Storage */,
 			);
 			path = Utill;
@@ -98,6 +101,14 @@
 				726F2AAD25738D6700849514 /* DBKeys.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		F4E79E9627D3441D0074D80D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				F4E79E9727D3443B0074D80D /* CarsView.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 			files = (
 				726F2A90257381A800849514 /* AppDelegate.swift in Sources */,
 				726F2A92257381A800849514 /* SceneDelegate.swift in Sources */,
+				F4E79E9827D3443B0074D80D /* CarsView.swift in Sources */,
 				726F2AA52573854400849514 /* TodoItem.swift in Sources */,
 				726F2AAE25738D6700849514 /* DBKeys.swift in Sources */,
 				726F2AAA25738D2A00849514 /* Database.swift in Sources */,
